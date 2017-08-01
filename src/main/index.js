@@ -35,8 +35,8 @@ function createWindow () {
 
   // Make the popup window for the menubar
   window = new BrowserWindow({
-    width: 300,
-    height: 350,
+    width: 325,
+    height: 400,
     show: false,
     frame: false,
     resizable: false
@@ -77,6 +77,7 @@ function showWindow () {
   }
 
   window.setPosition(x, y, false)
+  window.setVisibleOnAllWorkspaces(true)
   window.show()
   window.focus()
 }
