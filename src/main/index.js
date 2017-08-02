@@ -5,6 +5,8 @@ import { app, BrowserWindow, ipcMain, Tray, nativeImage } from 'electron'
 let tray
 let window
 
+app.dock.hide()
+
 /**
  * Set `__static` path to static files in production
  * https://simulatedgreg.gitbooks.io/electron-vue/content/en/using-static-assets.html
